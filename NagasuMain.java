@@ -16,8 +16,12 @@ public class NagasuMain{
 			}
 			System.out.println();
 		}
-		for(int i =0;i < 3;i++){
-			System.out.printf(i%2 == 0 ? "X X%n" : " X %n");
+		System.out.println("//X");
+		for(int i = 0;i < 3;i++){
+			for(int j=0;j<3;j++){
+				System.out.printf((i + j)%2 ==0 ? "X" :" ");
+			}
+			System.out.println();
 		}
 	}
 }
